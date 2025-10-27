@@ -4,7 +4,7 @@ import { Header } from '../header/header';
 
 @Component({
   selector: 'app-contacto',
-  imports: [Footer, Header],
+  imports: [],
   templateUrl: './contacto.html',
   styleUrl: './contacto.css'
 })

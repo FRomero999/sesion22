@@ -3,4 +3,30 @@
   <p>Esta es una página de inicio sencilla con un bloque hero atractivo y un footer.</p>
 </div>
 
+<table class="juegos-tabla">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Juego</th>
+      <th>Plataforma</th>
+      <th>Año</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  @for( juego of listaJuegos(); track juego.id) {
+    <tr>
+      <td>{{ juego.id }}</td>
+      <td>{{ juego.titulo }}</td>
+      <td>{{ juego.plataforma }}</td>
+      <td>{{ juego.agno }}</td>
+    </tr>
+  }
+
+  
+  </tbody>
+</table>
+
+<app-add-juego></app-add-juego>
+
 

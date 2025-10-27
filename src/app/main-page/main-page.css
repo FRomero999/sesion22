@@ -26,3 +26,32 @@
     padding: 16px 0 8px 0;
     border-top: 1px solid #e5e7eb;
   }
+
+  .juegos-tabla {
+    width: 100%;
+    max-width: 800px;
+    margin: 32px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .juegos-tabla th, .juegos-tabla td {
+    padding: 14px 20px;
+    text-align: left;
+  }
+  .juegos-tabla th {
+    background: #4f8cff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+  }
+  .juegos-tabla tr:nth-child(even) {
+    background-color: #f6f8fa;
+  }
+  .juegos-tabla tr:hover {
+    background: #e0f2fe;
+    transition: background 0.2s;
+  }
