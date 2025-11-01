@@ -1,57 +1,149 @@
 .hero {
-    background: linear-gradient(135deg, #4f8cff 0%, #6ee7b7 100%);
-    color: white;
-    padding: 60px 20px 40px 20px;
-    text-align: center;
-    border-radius: 16px;
-    margin: 40px auto 24px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    font-weight: 700;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    font-weight: 400;
-  }
-  footer {
-    text-align: center;
-    color: #888;
-    font-size: 1rem;
-    margin-top: 48px;
-    padding: 16px 0 8px 0;
-    border-top: 1px solid #e5e7eb;
-  }
+  background: linear-gradient(135deg, #4f8cff 0%, #6ee7b7 100%);
+  color: white;
+  padding: 60px 20px 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 48px;
+  padding: 16px 0 8px 0;
+  border-top: 1px solid #e5e7eb;
+}
 
-  .juegos-tabla {
-    width: 100%;
-    max-width: 800px;
-    margin: 32px auto;
-    border-collapse: collapse;
-    background: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .juegos-tabla th, .juegos-tabla td {
-    padding: 14px 20px;
-    text-align: left;
-  }
-  .juegos-tabla th {
-    background: #4f8cff;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.08rem;
-    letter-spacing: 0.5px;
-  }
-  .juegos-tabla tr:nth-child(even) {
-    background-color: #f6f8fa;
-  }
-  .juegos-tabla tr:hover {
-    background: #e0f2fe;
-    transition: background 0.2s;
-  }
+.juegos-tabla {
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.juegos-tabla th,
+.juegos-tabla td {
+  padding: 14px 20px;
+  text-align: left;
+}
+.juegos-tabla th {
+  background: #4f8cff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+}
+.juegos-tabla tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+.juegos-tabla tr:hover {
+  background: #e0f2fe;
+  transition: background 0.2s;
+}
+
+.juegos-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin: 32px 0 24px 0;
+}
+.juego-tarjeta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(48, 84, 217, 0.06), 0 1.5px 4.5px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.juego-tarjeta:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(48, 84, 217, 0.11), 0 3px 8px rgba(0, 0, 0, 0.07);
+}
+.juego-imagen {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+.juego-info {
+  padding: 18px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.juego-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #243c5a;
+  margin: 0 0 4px 0;
+}
+.juego-agno,
+.juego-plataforma,
+.juego-genero {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: #5771bc;
+  background: #f2f6fd;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.juego-info span + span {
+  margin-left: 4px;
+}
+
+a.btn-login {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 9px 23px;
+  background: #4f8cff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+button.btn-logout {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 9px 23px;
+  background: #dc3545;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button.btn-logout:hover {
+  background: #c82333;
+}
+
+a.btn-login:hover {
+  background: #357abd;
+}

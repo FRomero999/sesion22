@@ -1,32 +1,33 @@
 <div class="hero">
-  <h1>Bienvenido a la página principal</h1>
-  <p>Esta es una página de inicio sencilla con un bloque hero atractivo y un footer.</p>
+  <h1>Bienvenido a RetroGamesHub</h1>
+  <p>Explora, comparte y descubre los videojuegos clásicos más icónicos de la historia. ¡Busca tus favoritos o añade nuevos títulos a la colección!</p>
+  @if (auth.isLogged()) {
+    <button class="btn-logout" (click)="logout()">Cerrar sesión</button>
+  } @else {
+    <a href="/login" class="btn-login">Iniciar sesión</a>
+  }
 </div>
 
-<table class="juegos-tabla">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Juego</th>
-      <th>Plataforma</th>
-      <th>Año</th>
-    </tr>
-  </thead>
-  <tbody>
-  
-  @for( juego of listaJuegos(); track juego.id) {
-    <tr>
-      <td>{{ juego.id }}</td>
-      <td>{{ juego.titulo }}</td>
-      <td>{{ juego.plataforma }}</td>
-      <td>{{ juego.agno }}</td>
-    </tr>
-  }
+<section class="juegos-recientes">
 
-  
-  </tbody>
-</table>
+  <div class="juegos-tarjetas">
+    @for(juego of this.juegos(); track juego.id) {
+      <a [routerLink]="['/juego', juego.id]" class="juego-tarjeta">
+        <img 
+          src="https://picsum.photos/seed/{{juego.id}}/260/140" 
+          alt="Imagen de {{juego.titulo}}" 
+          class="juego-imagen"
+        >
+        <div class="juego-info">
+          <h3 class="juego-titulo">{{ juego.titulo }}</h3>
+          <span class="juego-agno">{{ juego.agno }}</span>
+          <span class="juego-plataforma">{{ juego.plataforma }}</span>
+          <span class="juego-genero">{{ juego.genero }}</span>
+        </div>
+      </a>
+    }
+  </div>
+  <p>Total de juegos: {{ this.totalJuegos }}</p>
 
-<app-add-juego></app-add-juego>
-
+</section>
 

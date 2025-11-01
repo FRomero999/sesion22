@@ -1,0 +1,48 @@
+@if (juego(); as juegoData) {
+  <div class="juego-detail-container">
+    <button class="btn-volver" (click)="volver()">← Volver</button>
+    
+    <div class="juego-ficha">
+      <img 
+        src="https://picsum.photos/seed/{{juegoData.id}}/600/300" 
+        alt="Imagen de {{juegoData.titulo}}" 
+        class="juego-imagen-detalle"
+      >
+      
+      <div class="juego-contenido">
+        <h1 class="juego-titulo-detalle">{{ juegoData.titulo }}</h1>
+        
+        <div class="juego-datos">
+          <div class="dato-item">
+            <span class="dato-label">Año de lanzamiento:</span>
+            <span class="dato-valor">{{ juegoData.agno }}</span>
+          </div>
+          
+          <div class="dato-item">
+            <span class="dato-label">Plataforma:</span>
+            <span class="dato-valor">{{ juegoData.plataforma }}</span>
+          </div>
+          
+          <div class="dato-item">
+            <span class="dato-label">Género:</span>
+            <span class="dato-valor">{{ juegoData.genero }}</span>
+          </div>
+          
+          <div class="dato-item">
+            <span class="dato-label">ID:</span>
+            <span class="dato-valor">#{{ juegoData.id }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="juego-detail-container">
+    <div class="error-message">
+      <h2>Juego no encontrado</h2>
+      <p>El juego que buscas no existe o ha sido eliminado.</p>
+      <button class="btn-volver" (click)="volver()">← Volver al inicio</button>
+    </div>
+  </div>
+}
+

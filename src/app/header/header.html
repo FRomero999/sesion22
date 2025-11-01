@@ -7,12 +7,21 @@
     <nav class="nav-menu">
       <ul class="nav-list">
         <li class="nav-item">
-          <a routerLink="/" routerLinkActive="active" class="nav-link">Principal</a>
+          <a routerLink="/"  class="nav-link">Principal</a>
         </li>
         <li class="nav-item">
-          <a routerLink="/contacto" routerLinkActive="active" class="nav-link">Contacto</a>
+          <a routerLink="/contacto" class="nav-link">Contacto</a>
         </li>
+        @if (auth.isLogged()) {
+          <li class="nav-item">
+            <a routerLink="/admin" class="nav-link">Admin</a>
+          </li>
+        }
       </ul>
     </nav>
+    
+    @if (auth.isLogged()) {
+      <div class="user-email">{{ emailUsuario }}</div>
+    }
   </div>
 </header>

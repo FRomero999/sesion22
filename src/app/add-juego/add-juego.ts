@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { Juego } from '../services/juegos/Juego';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Juegos } from '../services/juegos/juegos';
+
 
 @Component({
   selector: 'app-add-juego',
@@ -20,7 +21,7 @@ import { Juegos } from '../services/juegos/juegos';
       <label for="plataforma">Plataforma:</label>
       <input [(ngModel)]="juego.plataforma" id="plataforma" name="plataforma" type="text"><br>
 
-      <button type="submit">Guardar</button>
+      <button>Guardar</button>
     </form>
   `,
   styles: `
@@ -76,6 +77,7 @@ export class AddJuego {
   agregar(){
     console.log( this.juego )
     this.datos.añadirJuego(this.juego)
+    console.log(this.datos.listarJuegos())
   }
 
 }

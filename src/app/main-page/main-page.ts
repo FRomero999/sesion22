@@ -1,20 +1,24 @@
 import { Component, inject } from '@angular/core';
-import { Footer } from "../footer/footer";
-import { Header } from "../header/header";
+import { RouterLink } from '@angular/router';
 import { Juegos } from '../services/juegos/juegos';
-import { AddJuego } from "../add-juego/add-juego";
+import { Auth } from '../auth';
 
 @Component({
   selector: 'app-main-page',
-  imports: [AddJuego],
+  imports: [RouterLink],
   templateUrl: './main-page.html',
   styleUrl: './main-page.css'
 })
 
 export class MainPage {
+  private datos = inject(Juegos);
+  protected auth = inject(Auth);
 
-  private datos = inject(Juegos)
+  juegosRecientes = this.datos.juegosMasRecientes();
+  juegos = this.datos.listarJuegos();
+  totalJuegos = this.datos.totalJuegos();
 
-  listaJuegos = this.datos.listarJuegos();
-
+  logout() {
+    this.auth.logout();
+  }
 }
