@@ -1,12 +1,4 @@
-<div class="hero">
-  <h1>Bienvenido a RetroGamesHub</h1>
-  <p>Explora, comparte y descubre los videojuegos clásicos más icónicos de la historia. ¡Busca tus favoritos o añade nuevos títulos a la colección!</p>
-  @if (auth.isLogged()) {
-    <button class="btn-logout" (click)="logout()">Cerrar sesión</button>
-  } @else {
-    <a href="/login" class="btn-login">Iniciar sesión</a>
-  }
-</div>
+<app-hero></app-hero>
 
 <section class="juegos-recientes">
 
@@ -14,7 +6,7 @@
     @for(juego of this.juegos(); track juego.id) {
       <a [routerLink]="['/juego', juego.id]" class="juego-tarjeta">
         <img 
-          src="https://picsum.photos/seed/{{juego.id}}/260/140" 
+          src="https://placehold.co/260x140" 
           alt="Imagen de {{juego.titulo}}" 
           class="juego-imagen"
         >

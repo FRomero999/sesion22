@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Juegos } from '../services/juegos/juegos';
 import { Auth } from '../auth';
+import { Hero } from "../hero/hero";
 
 @Component({
   selector: 'app-main-page',
-  imports: [RouterLink],
+  imports: [RouterLink, Hero],
   templateUrl: './main-page.html',
   styleUrl: './main-page.css'
 })

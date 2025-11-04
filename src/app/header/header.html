@@ -16,12 +16,14 @@
           <li class="nav-item">
             <a routerLink="/admin" class="nav-link">Admin</a>
           </li>
-        }
+        } 
       </ul>
     </nav>
     
     @if (auth.isLogged()) {
-      <div class="user-email">{{ emailUsuario }}</div>
+      <div class="user-email">{{ this.emailUsuario }}</div>
+    } @else {
+      <a href="/login" class="btn-login">Iniciar sesión</a>
     }
   </div>
 </header>

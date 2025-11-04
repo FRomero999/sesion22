@@ -1,0 +1,9 @@
+<div class="hero">
+    <h1>Bienvenido a RetroGamesHub</h1>
+    <p>Explora, comparte y descubre los videojuegos clásicos más icónicos de la historia. ¡Busca tus favoritos o añade nuevos títulos a la colección!</p>
+    @if (auth.isLogged()) {
+      <button class="btn-logout" (click)="logout()">Cerrar sesión</button>
+    } @else {
+      <a href="/login" class="btn-login">Iniciar sesión</a>
+    }
+  </div>
