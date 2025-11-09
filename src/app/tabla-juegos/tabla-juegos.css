@@ -1,0 +1,67 @@
+.tabla-juegos-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabla-juegos-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.tabla-juegos {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-juegos thead {
+  background-color: #1976d2;
+  color: white;
+}
+
+.tabla-juegos th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabla-juegos tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.tabla-juegos tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.tabla-juegos tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tabla-juegos td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.tabla-juegos td:first-child {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.sin-juegos {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+

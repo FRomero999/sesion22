@@ -1,3 +1,11 @@
+<!--
+  Esta línea utiliza la sintaxis control flow de Angular para evaluar si existe un juego a mostrar.
+  - 'juego()' es una función signal que retorna el objeto del juego actual si existe, o undefined/null si no.
+  - El bloque '@if' muestra el contenido solo si 'juego()' retorna un valor "truthy".
+  - 'as juegoData' introduce una variable local ('juegoData') que contiene el objeto del juego retornado, 
+    para poder usarla directamente dentro del bloque en lugar de volver a invocar 'juego()'.
+  - Si 'juego()' es nulo o no existe el juego, se renderizará el bloque alternativo '@else'.
+-->
 @if (juego(); as juegoData) {
   <div class="juego-detail-container">
     <button class="btn-volver" (click)="volver()">← Volver</button>
@@ -45,4 +53,3 @@
     </div>
   </div>
 }
-

@@ -1,7 +1,16 @@
 <div class="admin-container">
   <h1>Panel de Administración</h1>
   <p>Gestiona los juegos de la colección</p>
-  
-  <app-add-juego></app-add-juego>
+  <!-- Tabla que muestra la lista de juegos actuales.
+       - [juegos] enlaza el array de juegos a mostrar.
+       - (juegoSeleccionado) es un evento emitido cuando el usuario elige un juego desde la tabla.
+  -->
+  <app-tabla-juegos [juegos]="juegos()" (juegoSeleccionado)="onJuegoSeleccionado($event)"></app-tabla-juegos>
+
+  <!-- Formulario para añadir o editar un juego.
+       - [seleccion] pasa el juego actualmente seleccionado (si existe) para prellenar datos y editar.
+         Si es null/undefined, el formulario se usará para agregar un nuevo juego.
+  -->
+  <app-add-juego [seleccion]="juegoSeleccionado()"></app-add-juego>
 </div>
 

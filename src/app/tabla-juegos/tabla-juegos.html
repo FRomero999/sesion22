@@ -1,0 +1,26 @@
+<div class="tabla-juegos-container">
+  <h2>Lista de Juegos</h2>
+
+  @if(juegos().length === 0) {
+    <p class="sin-juegos">No hay juegos disponibles</p>
+  }
+  <table class="tabla-juegos">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Año</th>
+        <th>Plataforma</th>
+        <th>Género</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(juego of juegos(); track juego.id) {
+        <tr app-tabla-juegos-fila [juego]="juego" (juegoSeleccionado)="onJuegoSeleccionado($event)"></tr>
+      }
+    </tbody>
+  </table>
+  
+
+</div>
+

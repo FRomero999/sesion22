@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input, effect } from '@angular/core';
 import { Juego } from '../services/juegos/Juego';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Juegos } from '../services/juegos/juegos';
@@ -20,6 +20,9 @@ import { Juegos } from '../services/juegos/juegos';
 
       <label for="plataforma">Plataforma:</label>
       <input [(ngModel)]="juego.plataforma" id="plataforma" name="plataforma" type="text"><br>
+
+      <label for="genero">Género:</label>
+      <input [(ngModel)]="juego.genero" id="genero" name="genero" type="text"><br>
 
       <button>Guardar</button>
     </form>
@@ -73,6 +76,19 @@ export class AddJuego {
 
   juego : Juego = {id:0,  titulo:"", agno:0, plataforma:"", genero:"" }
   private datos = inject(Juegos)
+  public seleccion = input<Juego | undefined>();
+
+  // El constructor utiliza un efecto reactivo para actualizar el juego local si cambia la entrada 'seleccion'.
+  // Cuando 'seleccion' recibe un valor (cuando se selecciona un juego para editar), 
+  // asigna dicho valor a la variable local 'juego' para que el formulario se rellene con los datos del juego seleccionado.
+  constructor(){
+    effect(() => {
+      const sel = this.seleccion();
+      if (sel) {
+        this.juego = sel;
+      }
+    });
+  }
 
   agregar(){
     console.log( this.juego )

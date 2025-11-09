@@ -1,0 +1,16 @@
+import { Component, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Juego } from '../services/juegos/Juego';
+
+@Component({
+  selector: 'app-gamecard',
+  imports: [RouterLink],
+  templateUrl: './gamecard.html',
+  styleUrl: './gamecard.css'
+})
+export class Gamecard {
+  // API moderna: input() retorna un Signal
+  juego = input.required<Juego>()
+  
+}
+

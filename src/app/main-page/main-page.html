@@ -4,19 +4,7 @@
 
   <div class="juegos-tarjetas">
     @for(juego of this.juegos(); track juego.id) {
-      <a [routerLink]="['/juego', juego.id]" class="juego-tarjeta">
-        <img 
-          src="https://placehold.co/260x140" 
-          alt="Imagen de {{juego.titulo}}" 
-          class="juego-imagen"
-        >
-        <div class="juego-info">
-          <h3 class="juego-titulo">{{ juego.titulo }}</h3>
-          <span class="juego-agno">{{ juego.agno }}</span>
-          <span class="juego-plataforma">{{ juego.plataforma }}</span>
-          <span class="juego-genero">{{ juego.genero }}</span>
-        </div>
-      </a>
+      <app-gamecard [juego]="juego"></app-gamecard>
     }
   </div>
   <p>Total de juegos: {{ this.totalJuegos }}</p>
