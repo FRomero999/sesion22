@@ -36,6 +36,7 @@ export class TablaJuegos {
    * y lo emite al componente padre.
    */
   onJuegoSeleccionado(juego: Juego) {
+    /* cuando recibo un evento desde el componente */
     this.juegoSeleccionado.emit(juego);
   }
 }

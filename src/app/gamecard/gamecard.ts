@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Juego } from '../services/juegos/Juego';
 
@@ -10,7 +10,9 @@ import { Juego } from '../services/juegos/Juego';
 })
 export class Gamecard {
   // API moderna: input() retorna un Signal
-  juego = input.required<Juego>()
-  
+  game = input.required<Juego>()
+  value = input<Number>(0)
+  alt = input<String>("")
+    
 }
 

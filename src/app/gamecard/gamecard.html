@@ -1,14 +1,14 @@
-<a [routerLink]="['/juego', juego().id]" class="juego-tarjeta">
+<a [routerLink]="['/juego', game().id]" class="juego-tarjeta">
   <img 
     src="https://placehold.co/260x140" 
-    alt="Imagen de {{juego().titulo}}" 
+    alt="{{ alt() }}" 
     class="juego-imagen"
   >
   <div class="juego-info">
-    <h3 class="juego-titulo">{{ juego().titulo }}</h3>
-    <span class="juego-agno">{{ juego().agno }}</span>
-    <span class="juego-plataforma">{{ juego().plataforma }}</span>
-    <span class="juego-genero">{{ juego().genero }}</span>
+    <h3 class="juego-titulo">{{ game().titulo }}</h3>
+    <span class="juego-agno">{{ game().agno }}</span>
+    <span class="juego-plataforma">{{ game().plataforma }}</span>
+    <span class="juego-genero">{{ game().genero }}</span>
   </div>
 </a>
 

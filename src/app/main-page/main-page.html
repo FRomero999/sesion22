@@ -4,7 +4,7 @@
 
   <div class="juegos-tarjetas">
     @for(juego of this.juegos(); track juego.id) {
-      <app-gamecard [juego]="juego"></app-gamecard>
+      <app-gamecard [game]="juego" alt="Este es un texto alternativo"></app-gamecard>
     }
   </div>
   <p>Total de juegos: {{ this.totalJuegos }}</p>
