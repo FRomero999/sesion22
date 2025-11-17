@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Footer } from '../footer/footer';
-import { Header } from '../header/header';
+import { Weather } from "../weather/weather";
 
 @Component({
   selector: 'app-contacto',
-  imports: [],
+  imports: [Weather],
   templateUrl: './contacto.html',
   styleUrl: './contacto.css'
 })

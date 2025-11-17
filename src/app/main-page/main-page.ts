@@ -20,6 +20,12 @@ export class MainPage {
   juegos = this.datos.listarJuegos();
   totalJuegos = this.datos.totalJuegos();
 
+  constructor(){
+    console.log( this.juegos() )
+    console.log( this.juegosRecientes() )
+    console.log( this.totalJuegos )
+  }
+
   logout() {
     this.auth.logout();
   }

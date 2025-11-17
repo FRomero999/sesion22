@@ -1,178 +1,186 @@
-[
-  {
-    "id": 1,
-    "titulo": "The Legend of Zelda: Ocarina of Time",
-    "agno": 1998,
-    "plataforma": "Nintendo 64",
-    "genero": "Aventura"
-  },
-  {
-    "id": 2,
-    "titulo": "Super Mario World",
-    "agno": 1990,
-    "plataforma": "SNES",
-    "genero": "Plataformas"
-  },
-  {
-    "id": 3,
-    "titulo": "Final Fantasy VII",
-    "agno": 1997,
-    "plataforma": "PlayStation",
-    "genero": "RPG"
-  },
-  {
-    "id": 4,
-    "titulo": "Half-Life",
-    "agno": 1998,
-    "plataforma": "PC",
-    "genero": "Shooter"
-  },
-  {
-    "id": 5,
-    "titulo": "Resident Evil 2",
-    "agno": 1998,
-    "plataforma": "PlayStation",
-    "genero": "Terror"
-  },
-  {
-    "id": 6,
-    "titulo": "The Witcher 3: Wild Hunt",
-    "agno": 2015,
-    "plataforma": "PC",
-    "genero": "RPG"
-  },
-  {
-    "id": 7,
-    "titulo": "Red Dead Redemption 2",
-    "agno": 2018,
-    "plataforma": "PlayStation 4",
-    "genero": "Aventura"
-  },
-  {
-    "id": 8,
-    "titulo": "God of War",
-    "agno": 2018,
-    "plataforma": "PlayStation 4",
-    "genero": "Aventura"
-  },
-  {
-    "id": 9,
-    "titulo": "The Last of Us",
-    "agno": 2013,
-    "plataforma": "PlayStation 3",
-    "genero": "Aventura"
-  },
-  {
-    "id": 10,
-    "titulo": "Minecraft",
-    "agno": 2011,
-    "plataforma": "PC",
-    "genero": "Sandbox"
-  },
-  {
-    "id": 11,
-    "titulo": "Grand Theft Auto V",
-    "agno": 2013,
-    "plataforma": "PlayStation 3",
-    "genero": "Acción"
-  },
-  {
-    "id": 12,
-    "titulo": "Dark Souls",
-    "agno": 2011,
-    "plataforma": "PlayStation 3",
-    "genero": "RPG"
-  },
-  {
-    "id": 13,
-    "titulo": "Portal 2",
-    "agno": 2011,
-    "plataforma": "PC",
-    "genero": "Puzzle"
-  },
-  {
-    "id": 14,
-    "titulo": "Super Mario Odyssey",
-    "agno": 2017,
-    "plataforma": "Nintendo Switch",
-    "genero": "Plataformas"
-  },
-  {
-    "id": 15,
-    "titulo": "The Elder Scrolls V: Skyrim",
-    "agno": 2011,
-    "plataforma": "PC",
-    "genero": "RPG"
-  },
-  {
-    "id": 16,
-    "titulo": "Bloodborne",
-    "agno": 2015,
-    "plataforma": "PlayStation 4",
-    "genero": "RPG"
-  },
-  {
-    "id": 17,
-    "titulo": "Celeste",
-    "agno": 2018,
-    "plataforma": "Nintendo Switch",
-    "genero": "Plataformas"
-  },
-  {
-    "id": 18,
-    "titulo": "Hollow Knight",
-    "agno": 2017,
-    "plataforma": "PC",
-    "genero": "Metroidvania"
-  },
-  {
-    "id": 19,
-    "titulo": "Persona 5",
-    "agno": 2016,
-    "plataforma": "PlayStation 4",
-    "genero": "RPG"
-  },
-  {
-    "id": 20,
-    "titulo": "Doom Eternal",
-    "agno": 2020,
-    "plataforma": "PC",
-    "genero": "Shooter"
-  },
-  {
-    "id": 21,
-    "titulo": "Sekiro: Shadows Die Twice",
-    "agno": 2019,
-    "plataforma": "PlayStation 4",
-    "genero": "Aventura"
-  },
-  {
-    "id": 22,
-    "titulo": "Stardew Valley",
-    "agno": 2016,
-    "plataforma": "PC",
-    "genero": "Simulación"
-  },
-  {
-    "id": 23,
-    "titulo": "Undertale",
-    "agno": 2015,
-    "plataforma": "PC",
-    "genero": "RPG"
-  },
-  {
-    "id": 24,
-    "titulo": "Super Smash Bros. Ultimate",
-    "agno": 2018,
-    "plataforma": "Nintendo Switch",
-    "genero": "Lucha"
-  },
-  {
-    "id": 25,
-    "titulo": "Horizon Zero Dawn",
-    "agno": 2017,
-    "plataforma": "PlayStation 4",
-    "genero": "Aventura"
-  }
-]
-
+{
+  "juegos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Ocarina of Time",
+      "agno": 1998,
+      "plataforma": "Nintendo 64",
+      "genero": "Aventura"
+    },
+    {
+      "id": "2",
+      "titulo": "Super Mario World",
+      "agno": 1990,
+      "plataforma": "SNES",
+      "genero": "Plataformas"
+    },
+    {
+      "id": "3",
+      "titulo": "Final Fantasy VII",
+      "agno": 1997,
+      "plataforma": "PlayStation",
+      "genero": "RPG"
+    },
+    {
+      "id": "4",
+      "titulo": "Half-Life",
+      "agno": 1998,
+      "plataforma": "PC",
+      "genero": "Shooter"
+    },
+    {
+      "id": "5",
+      "titulo": "Resident Evil 2",
+      "agno": 1998,
+      "plataforma": "PlayStation",
+      "genero": "Terror"
+    },
+    {
+      "id": "6",
+      "titulo": "The Witcher 3: Wild Hunt",
+      "agno": 2015,
+      "plataforma": "PC",
+      "genero": "RPG"
+    },
+    {
+      "id": "7",
+      "titulo": "Red Dead Redemption 2",
+      "agno": 2018,
+      "plataforma": "PlayStation 4",
+      "genero": "Aventura"
+    },
+    {
+      "id": "8",
+      "titulo": "God of War",
+      "agno": 2018,
+      "plataforma": "PlayStation 4",
+      "genero": "Aventura"
+    },
+    {
+      "id": "9",
+      "titulo": "The Last of Us",
+      "agno": 2013,
+      "plataforma": "PlayStation 3",
+      "genero": "Aventura"
+    },
+    {
+      "id": "10",
+      "titulo": "Minecraft",
+      "agno": 2011,
+      "plataforma": "PC",
+      "genero": "Sandbox"
+    },
+    {
+      "id": "11",
+      "titulo": "Grand Theft Auto V",
+      "agno": 2013,
+      "plataforma": "PlayStation 3",
+      "genero": "Acción"
+    },
+    {
+      "id": "12",
+      "titulo": "Dark Souls",
+      "agno": 2011,
+      "plataforma": "PlayStation 3",
+      "genero": "RPG"
+    },
+    {
+      "id": "13",
+      "titulo": "Portal 2",
+      "agno": 2011,
+      "plataforma": "PC",
+      "genero": "Puzzle"
+    },
+    {
+      "id": "14",
+      "titulo": "Super Mario Odyssey",
+      "agno": 2017,
+      "plataforma": "Nintendo Switch",
+      "genero": "Plataformas"
+    },
+    {
+      "id": "15",
+      "titulo": "The Elder Scrolls V: Skyrim",
+      "agno": 2011,
+      "plataforma": "PC",
+      "genero": "RPG"
+    },
+    {
+      "id": "16",
+      "titulo": "Bloodborne",
+      "agno": 2015,
+      "plataforma": "PlayStation 4",
+      "genero": "RPG"
+    },
+    {
+      "id": "17",
+      "titulo": "Celeste",
+      "agno": 2018,
+      "plataforma": "Nintendo Switch",
+      "genero": "Plataformas"
+    },
+    {
+      "id": "18",
+      "titulo": "Hollow Knight",
+      "agno": 2017,
+      "plataforma": "PC",
+      "genero": "Metroidvania"
+    },
+    {
+      "id": "19",
+      "titulo": "Persona 5",
+      "agno": 2016,
+      "plataforma": "PlayStation 4",
+      "genero": "RPG"
+    },
+    {
+      "id": "20",
+      "titulo": "Doom Eternal",
+      "agno": 2020,
+      "plataforma": "PC",
+      "genero": "Shooter"
+    },
+    {
+      "id": "21",
+      "titulo": "Sekiro: Shadows Die Twice",
+      "agno": 2019,
+      "plataforma": "PlayStation 4",
+      "genero": "Aventura"
+    },
+    {
+      "id": "22",
+      "titulo": "Stardew Valley",
+      "agno": 2016,
+      "plataforma": "PC",
+      "genero": "Simulación"
+    },
+    {
+      "id": "23",
+      "titulo": "Undertale",
+      "agno": 2015,
+      "plataforma": "PC",
+      "genero": "RPG"
+    },
+    {
+      "id": "24",
+      "titulo": "Super Smash Bros. Ultimate",
+      "agno": 2018,
+      "plataforma": "Nintendo Switch",
+      "genero": "Lucha"
+    },
+    {
+      "id": "25",
+      "titulo": "Horizon Zero Dawn",
+      "agno": 2017,
+      "plataforma": "PlayStation 4",
+      "genero": "Aventura"
+    },
+    {
+      "id": 0,
+      "titulo": "dsadsadsa",
+      "agno": 0,
+      "plataforma": "dsadsadas",
+      "genero": "dsdasdas"
+    }
+  ]
+}
