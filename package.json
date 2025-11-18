@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "concurrently \"ng serve\" \"json-server --watch src/app/services/juegos/juegos-iniciales.json --port 3000\"",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build": "ng build"
   },
   "prettier": {
     "printWidth": 100,
